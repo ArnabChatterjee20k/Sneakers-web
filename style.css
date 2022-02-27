@@ -32,7 +32,7 @@ p{
     font-size: 1rem;
     font-weight: var(--regular_wt);
 }
-h1{
+h1,h4{
     font-weight: var(--bold_wt);
 }
 a{
@@ -107,7 +107,7 @@ nav::before{
     display: flex;
     flex-direction: column;
     max-width: 100%;
-    margin-right: 4em;
+    margin-right: 7em;
 }
 .gallery_img{
     border-radius: var(--image_boder_radius);
@@ -119,6 +119,7 @@ nav::before{
     display: flex;
     justify-content:space-around ;
     align-items: center;
+    margin-top: 1em;
 }
 .thumbnail_img{
     min-width: 0;
@@ -135,4 +136,53 @@ nav::before{
 .thumbnail_img:hover:not(.active) {
     border-color: var(--orange);
     filter: opacity(0.5);
+}
+
+/* details */
+.company_details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.company_title{
+    text-transform: uppercase;
+    color: var(--orange);
+    margin-bottom: 1em;
+}
+.company_tag{
+    font-size: 4rem;
+    line-height: 1em;
+}
+.company_description{
+    margin-top: 3em;
+    margin-bottom: 2em;
+    width: 80%;
+    color: var(--dark_grey);
+}
+.price_info{
+    display: flex;
+    flex-direction: column;
+}
+.price{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.current_price{
+    font-weight: var(--bold_wt);
+    font-size: 2rem;
+    margin-right: 0.5em;
+}
+.discount{
+    padding: 0.5em;
+    color: var(--orange);
+    background-color: var(--pale_orange);
+    font-weight: var(--bold_wt);
+    border-radius: 4px;
+}
+.actual_price{
+    /* font-weight: var(--bold_wt); */
+    color: var(--dark_grey);
+    text-decoration:line-through;
+    line-height: 2.5em;
 }
